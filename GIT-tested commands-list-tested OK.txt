@@ -1,0 +1,79 @@
+required protocol on vm
+ssh
+http
+https
+allicmp/ipv4
+smtps
+
+SG group
+
+storage 12 GB
+c: drive only
+edit network settings
+
+machine type 2gb ram.
+ec2-user or ubuntu user name for ubuntu machine
+Under home directory all user listed
+
+update system
+amazon & redhat ke case use yum update -y
+Ubuntu apt update -y
+Install git
+sudo su root permission
+yum update
+yum install git -y
+->-->>follow all step on both machines
+which git
+git --version
+git config --global user.name "vivek-Mumbai"
+git config --global user.email "viveknigsam18@gmail.com"
+git config --list
+-->>-do it on both VMs
+deply GIT - create one dir
+mkdir gitmumbai
+cd gitmumbai
+git init
+DO it on both VMs
+Now till here both VMs are Configured as local repository.
+developer will write code here
+to create file
+cat or touch
+cat mario.txt
+write code this is my mario code
+jjjjjjjjjjjjjjjj
+aaaaaaaaaaaaaaaaaaa
+nnnnnnnnnnnnnn
+mario
+now save file
+ctrl Z
+to check
+ls
+cat mario.txt
+check git stage there are 3 stage
+1) working stage/directory
+git status (RED content)
+touch pubg.txt code1.java
+git add . (save the file temporary)
+2) staging area
+GREEN content
+
+3) Local storage COMMIT
+to go back 
+GIT reset
+git commit -m "first commit mario"
+git log
+git show 7 char
+Now this code needs to be sent on globally
+Steps
+connect GitHub repository copy URL
+git remote add origin URL
+git push -u origin master (push command)
+credentials required user name & token
+enter GitHub user name
+password: (Token)
+right click once
+its done
+check file at GitHub
+
+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
+
