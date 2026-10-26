@@ -20,7 +20,7 @@ python3 --version
 go to server
 complete the authentication process
 generate the key so that server can identify the client
-kty location
+key location
 cd .ssh key pair location
 ls
 authorizes_keys
