@@ -30,7 +30,7 @@ check authorized key
 .ssh$ sudo nano (authorized_keys) - open key at nano editor
 delete the key from client at nano editor
 go to server
-& geberate new key - use command
+& generate new key - use command
 .ssh$ ssh-keygen - save the file at same location
 cat & paste the path you will see the new key RSA & ED - key pair
 copy key & paste at client
