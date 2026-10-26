@@ -27,7 +27,7 @@ authorizes_keys
 
 go to client perform same task
 check authorized key
-.ssh$ sudo nano - open key at nano editor
+.ssh$ sudo nano (authorized_keys) - open key at nano editor
 delete the key from client at nano editor
 go to server
 & geberate new key - use command
