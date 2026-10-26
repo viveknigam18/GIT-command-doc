@@ -1,0 +1,66 @@
+Ansible Setup & Configuration
+Ansible - change font size & colour to Yellow for control node
+Node
+sudo apt Update
+sudo apt install software-properties-common
+sudo apt-add-repository ppa:ansible/ansible - add the image
+sudo apt update - update it again
+sudo apt install ansible - install the image
+which ansible
+ansible --version
+which python3
+python3 --version
+Server is ready
+
+go to node for configuration
+nothing to do only on client only update the os
+sudo apt-get update
+sudo apt-get install python3 - python installation command
+python3 --version
+go to server
+complete the authentication process
+generate the key so that server can identify the client
+kty location
+cd .ssh key pair location
+ls
+authorizes_keys
+
+go to client perform same task
+check authorized key
+.ssh$ sudo nano - open key at nano editor
+delete the key from client at nano editor
+go to server
+& geberate new key - use command
+.ssh$ ssh-keygen - save the file at same location
+cat & paste the path you will see the new key RSA & ED - key pair
+copy key & paste at client
+save and exit
+add the host file
+sudo nano /etc/ansible/hosts
+go to extream bottom & crate a group
+[family]
+node ansible_ssh_hosts=public IP where node is clients host name
+Save & exit
+now check the connectivity with client & server
+ansible -m ping all - Enter
+yes
+response - "PONG"
+ansible -m ping family
+ansible -m ping node 
+configuration completes - client & server
+exit from .ssh
+mkdir ansible
+cd ansible
+write a play book
+sudo nano myplay.yml (playbook name)
+start with ---
+- (hostname) node
+playbook name
+name: play1 (list task being performed)
+tasks:
+-name: installing apache web services on the node(task name) - just wait....!
+apt: name=apache2 state-latest(Package)
+become: true - playbook ends here
+save file & exit - when file run web server will install on all machines
+push playbook to node - command
+ansible-playbook myplay.yml
