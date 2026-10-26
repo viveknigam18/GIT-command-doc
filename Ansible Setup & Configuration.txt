@@ -36,6 +36,7 @@ cat & paste the path you will see the new key RSA & ED - key pair
 copy key & paste at client
 save and exit
 add the host file
+go to Father
 sudo nano /etc/ansible/hosts
 go to extream bottom & crate a group
 [family]
