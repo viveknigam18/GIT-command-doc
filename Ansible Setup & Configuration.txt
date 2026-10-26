@@ -1,3 +1,4 @@
+required components pyrhon3
 Ansible Setup & Configuration
 Ansible - change font size & colour to Yellow for control node
 Node
