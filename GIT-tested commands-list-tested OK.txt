@@ -21,7 +21,7 @@ Ubuntu sudo apt update -y
 Install git
 sudo su root permission
 yum update
-yum install git -y
+sudo apt install git -y
 ->-->>follow all step on both machines
 which git
 git --version
