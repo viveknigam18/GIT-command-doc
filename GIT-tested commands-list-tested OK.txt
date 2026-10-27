@@ -17,7 +17,7 @@ Under home directory all user listed
 
 update system
 amazon & redhat ke case use yum update -y
-Ubuntu apt update -y
+Ubuntu sudo apt update -y
 Install git
 sudo su root permission
 yum update
