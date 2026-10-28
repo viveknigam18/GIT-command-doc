@@ -1,0 +1,30 @@
+Docker Installation & Configuration
+Docker is advanced version of VMs :we create containers in Docker but it does not reserve any resources.
+
+Docker is very light weight
+Login on Ubuntu VM ec2-user
+root priviledge
+sudo su
+yum update -y
+yum install docker
+y
+which docker
+docker --version or docker -v
+service docker status & docker info
+q - for quit
+Docker service start command
+service docker start
+docker info
+service docker status
+docker images -> To list current images in docker->
+docker ps (process status)  to show all running processes
+docker ps -a (To List all type of containers)
+hub.docker.com
+docker run -it ubuntu /bin/bash
+docker ps -a
+docker images
+docker tag ubuntu viveknigam18/task1 (image hub.docker.com under my profile it will list with this name)
+docker push viveknigam18/task1
+some time you may find ACCESS error  here then you need to login with hub.docker credentials
+Pushed
+check now on hub.docker .com image will be listed there
