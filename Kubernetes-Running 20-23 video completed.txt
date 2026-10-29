@@ -1,0 +1,36 @@
+Kubernetes installation & configuration
+Minikube
+ON ubuntu
+it will not work on free tear
+select t3 large
+8 GB 2 cpu
+ssh
+http
+https
+all icmp-ipv4
+15 GB - Storage
+1) sudo su
+sudo apt update
+sudo apt upgrade -y
+ 
+Docker installation
+sudo apt install docker.io -y
+which docker
+docker --version
+service docker status
+sudo syatemctl is-active docker
+
+Minikube environment
+
+curl-LO https://storage.googleopis.com/minikube/releases/latest/minikube-linux-amd64
+-----------
+this will download the minikube
+-----------
+ls
+sudo install minikube-linux-amd64 /usr/local/bin/minikube
+minikube version
+
+----------------------------
+Next requirement is
+kubectl
+20:23 Min Video Completed
