@@ -1,0 +1,32 @@
+Jenkins
+https://www.geeksforgeeks.org/devops/install-and-configure-jenkins-in-aws-ec2/
+----------------------------------------------
+
+Jenkins installation & configuration steps
+prerequisites Java 21 or 25
+Jenkins 
+---Java installation---
+sudo su
+sudo apt update
+sudo apt upgrade -y
+apt install -y fontconfig openjdk-21-jre
+java --version
+----Jenkins installation----
+Check the package download using APT
+apt-cache policy Jenkins
+--------------------------------------------
+sudo mkdir -p /usr/share/keyrings
+sudo curl -fsSL https://pkg.jenkins.io/debian-stable/jenkins.io-2026.key | sudo tee /usr/share/keyrings/jenkins-keyring.asc > /dev/null
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc] https://pkg.jenkins.io/debian-stable binary/" | sudo tee /etc/apt/sources.list.d/jenkins.list
+sudo apt update
+sudo apt install -y fontconfig openjdk-21-jre jenkins
+sudo systemctl enable --now jenkins
+--------------------------------------------
+
+sudo apt-get update -y
+sudo apt install jenkins -y
+
+access Jenkins public IP:8080
+
+Notes: after completing all the above steps steps if Jenkins service still failed to start
+then check java version must be 21 0r 25 not less version supported
