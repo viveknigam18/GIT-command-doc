@@ -1,0 +1,92 @@
+For Terraform Registry search on gool for 
+aws terraform provider
+
+OR
+GO TO :-https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+Directly
+Terraform Resource provisioning tool
+Installation & configuration.
+to setup it no vm required
+can be configured on own pc/laptop also
+->= for windows download it from google
+-----------------------------------
+1) free download terraform for Windows
+------------------------------------
+extract the zipped file
+go to c:\program files\create a folder ->Terraform->paste the .exe file here
+Environment variables - Path
+search for env and press enter & go to
+environment variables - then go to 
+User Variables click new - double click on path - click on new and paste the path of terraform.exe file
+Then go to System Variables click new - click on path - New - paste the file path
+
+2) Git for Windows: Required download and install the software.
+
+in google free download git for windows.
+git - download and install. on windows pc
+open CMD run terraformversion
+open git bash
+check terraform version
+cd document
+mkdir terraform
+mkdir myproject
+cd myproject
+vi myproject.tf - creating project
+go to google search for 
+AWS terraform provider
+Ist connect terraform with provider
+code can be found at
+
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+Run ->- terraform init
+ls -a
+go to aws console & create an admin user
+
+iam
+users
+create user
+user name
+attach policies directly
+assign Admin policy
+create user
+go to user
+click security credentials
+at bottom click create access key
+use case - click other -> - next
+click access key
+COPY
+Access key 7 Secret access key
+
+@ the location
+https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+
+Under
+Authentication and Configuration
+
+provider "aws" {
+  region     = "us-west-2"
+  access_key = "my-access-key"
+  secret_key = "my-secret-key"
+}
+
+----------------------------------
+Condition if multiple servers need to be created
+on second code above tag PUT CONDITION 
+count=5
+again go to https://registry.terraform.io/providers/hashicorp/aws/latest/docs
+and look for EC2 (Elastic Compute Cloude)
+Expand aws_instance
+copy the code from page
+Save & exit from file
+run validate command - which will verify the command
+terraform validate
+Success ! the configuration I valid
+terraform plan
+terraform apply
+
+------------
+To delete the environment 
+Run - terraform destroy
+
+Yes
